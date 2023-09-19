@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfaf54d4-09fb-4c0d-8071-7d25352a2ece" name="Changes" comment="solved problem with server ip, changed cycle of receiving the file">
+    <list default="true" id="bfaf54d4-09fb-4c0d-8071-7d25352a2ece" name="Changes" comment="tested on mp4-file, fixed getResource()">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpeedController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +53,7 @@
     <configuration name="client1" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ClientLauncher" />
       <module name="lab2" />
-      <option name="PROGRAM_PARAMETERS" value="192.168.1.105 8080 src/main/resources/file.txt" />
+      <option name="PROGRAM_PARAMETERS" value="192.168.1.105 8080 src/main/resources/видео.mp4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,21 +108,29 @@
       <option name="project" value="LOCAL" />
       <updated>1695135446458</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tested on mp4-file, fixed getResource()">
+      <created>1695138799913</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695138799913</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nothing works" />
     <MESSAGE value="works, problem with setting up server-ip" />
     <MESSAGE value="solved problem with server ip, changed cycle of receiving the file" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved problem with server ip, changed cycle of receiving the file" />
+    <MESSAGE value="tested on mp4-file, fixed getResource()" />
+    <option name="LAST_COMMIT_MESSAGE" value="tested on mp4-file, fixed getResource()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FileReceiver.java</url>
-          <line>95</line>
+          <line>110</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
