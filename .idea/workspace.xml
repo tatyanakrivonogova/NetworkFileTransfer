@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfaf54d4-09fb-4c0d-8071-7d25352a2ece" name="Changes" comment="works, problem with setting up server-ip">
+    <list default="true" id="bfaf54d4-09fb-4c0d-8071-7d25352a2ece" name="Changes" comment="solved problem with server ip, changed cycle of receiving the file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,13 +99,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695132015377</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="solved problem with server ip, changed cycle of receiving the file">
+      <created>1695135446458</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695135446458</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nothing works" />
     <MESSAGE value="works, problem with setting up server-ip" />
-    <option name="LAST_COMMIT_MESSAGE" value="works, problem with setting up server-ip" />
+    <MESSAGE value="solved problem with server ip, changed cycle of receiving the file" />
+    <option name="LAST_COMMIT_MESSAGE" value="solved problem with server ip, changed cycle of receiving the file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
