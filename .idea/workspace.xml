@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfaf54d4-09fb-4c0d-8071-7d25352a2ece" name="Changes" comment="tested on mp4-file, fixed getResource()">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpeedController.java" afterDir="false" />
+    <list default="true" id="bfaf54d4-09fb-4c0d-8071-7d25352a2ece" name="Changes" comment="added SpeedController and DataController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpeedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpeedController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,22 +38,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "D:/java/lab4",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java/lab4&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.client1">
     <configuration name="client1" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ClientLauncher" />
       <module name="lab2" />
-      <option name="PROGRAM_PARAMETERS" value="192.168.1.105 8080 src/main/resources/видео.mp4" />
+      <option name="PROGRAM_PARAMETERS" value="192.168.1.102 8080 src/main/resources/видео.mp4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -61,7 +61,7 @@
     <configuration name="server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ServerLauncher" />
       <module name="lab2" />
-      <option name="PROGRAM_PARAMETERS" value="192.168.1.105 8080" />
+      <option name="PROGRAM_PARAMETERS" value="192.168.1.102 8080" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695138799913</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added SpeedController and DataController">
+      <created>1695141061460</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695141061460</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -123,14 +130,15 @@
     <MESSAGE value="works, problem with setting up server-ip" />
     <MESSAGE value="solved problem with server ip, changed cycle of receiving the file" />
     <MESSAGE value="tested on mp4-file, fixed getResource()" />
-    <option name="LAST_COMMIT_MESSAGE" value="tested on mp4-file, fixed getResource()" />
+    <MESSAGE value="added SpeedController and DataController" />
+    <option name="LAST_COMMIT_MESSAGE" value="added SpeedController and DataController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FileReceiver.java</url>
-          <line>110</line>
+          <line>95</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

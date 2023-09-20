@@ -5,11 +5,13 @@ public class SpeedController implements Runnable
     private static final int PERIOD = 3000;
     private final long id;
     private boolean isRunning;
+    private boolean firstInfo;
 
     public SpeedController(int _id)
     {
         id = _id;
         isRunning = false;
+        firstInfo = false;
     }
 
     public void finish()
@@ -35,7 +37,7 @@ public class SpeedController implements Runnable
         try
         {
             long lastBytesReceivedCount = 0;
-            while (!Thread.currentThread().isInterrupted() && isRunning)
+            while (!Thread.currentThread().isInterrupted() && (isRunning || !firstInfo))
             {
                 synchronized (this)
                 {
@@ -49,13 +51,14 @@ public class SpeedController implements Runnable
                 DecimalFormat decimalFormat = new DecimalFormat("####.##");
 
                 double lastInterval = (double) (currentTime - lastTime) / 1000;
-                double recentDataReceived = (double) (DataController.getTotalBytesReceived(id) - lastBytesReceivedCount) / (1024 * 1024);
+                double lastDataReceived = (double) (DataController.getTotalBytesReceived(id) - lastBytesReceivedCount) / (1024 * 1024);
 
-                System.out.println(id + " client : total speed " + decimalFormat.format(totalDataReceived / totalTime) + " mb/sec");
-                System.out.println(id + " client : current speed " + decimalFormat.format(recentDataReceived / lastInterval) + " mb/sec");
+                System.out.println(id + " client : total speed " + decimalFormat.format(totalDataReceived / totalTime) + " mb/s");
+                System.out.println(id + " client : current speed " + decimalFormat.format(lastDataReceived / lastInterval) + " mb/s");
 
                 lastBytesReceivedCount = DataController.getTotalBytesReceived(id);
                 lastTime = currentTime;
+                if (!firstInfo) firstInfo = true;
             }
         } catch (InterruptedException ex)
         {

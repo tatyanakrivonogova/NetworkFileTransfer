@@ -3,7 +3,6 @@ import java.util.HashMap;
 public class DataController
 {
     private static final HashMap<Long, Long> totalCounters = new HashMap<>();
-    private static long totalBytesReceived = 0;
 
     public static void addNewCounter(long id)
     {
@@ -37,11 +36,4 @@ public class DataController
         }
     }
 
-    public static void clearAll()
-    {
-        synchronized (totalCounters)
-        {
-            totalCounters.clear();
-        }
-    }
 }
