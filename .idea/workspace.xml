@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfaf54d4-09fb-4c0d-8071-7d25352a2ece" name="Changes" comment="added SpeedController and DataController">
+    <list default="true" id="bfaf54d4-09fb-4c0d-8071-7d25352a2ece" name="Changes" comment="without file name length sending, with readUTF and writeUTF">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SpeedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpeedController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,11 +48,19 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.client1">
+  <component name="RunManager" selected="Application.client2">
     <configuration name="client1" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ClientLauncher" />
       <module name="lab2" />
-      <option name="PROGRAM_PARAMETERS" value="192.168.1.102 8080 src/main/resources/видео.mp4" />
+      <option name="PROGRAM_PARAMETERS" value="192.168.1.102 8080 src/main/resources/hd.mkv" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="client2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ClientLauncher" />
+      <module name="lab2" />
+      <option name="PROGRAM_PARAMETERS" value="192.168.1.102 8080 src/main/resources/SampleVideo.mp4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -68,6 +75,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.client1" />
+      <item itemvalue="Application.client2" />
       <item itemvalue="Application.server" />
     </list>
   </component>
@@ -122,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695141061460</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="without file name length sending, with readUTF and writeUTF">
+      <created>1695215771245</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695215771245</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -131,14 +146,15 @@
     <MESSAGE value="solved problem with server ip, changed cycle of receiving the file" />
     <MESSAGE value="tested on mp4-file, fixed getResource()" />
     <MESSAGE value="added SpeedController and DataController" />
-    <option name="LAST_COMMIT_MESSAGE" value="added SpeedController and DataController" />
+    <MESSAGE value="without file name length sending, with readUTF and writeUTF" />
+    <option name="LAST_COMMIT_MESSAGE" value="without file name length sending, with readUTF and writeUTF" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FileReceiver.java</url>
-          <line>95</line>
+          <line>94</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
