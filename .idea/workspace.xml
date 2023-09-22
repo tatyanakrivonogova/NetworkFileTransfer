@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfaf54d4-09fb-4c0d-8071-7d25352a2ece" name="Changes" comment="added opportunity to send file from any directory">
+    <list default="true" id="bfaf54d4-09fb-4c0d-8071-7d25352a2ece" name="Changes" comment="closing socket in catch-block, fixed getting fileName from fullFileName">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,11 +47,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.client1">
+  <component name="RunManager" selected="Application.client2">
     <configuration name="client1" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ClientLauncher" />
       <module name="lab2" />
-      <option name="PROGRAM_PARAMETERS" value="192.168.1.104 8080 src/main/resources/видео.mp4" />
+      <option name="PROGRAM_PARAMETERS" value="192.168.1.106 8080 D:\\фильмы\\hd.mkv" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -59,7 +59,7 @@
     <configuration name="client2" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ClientLauncher" />
       <module name="lab2" />
-      <option name="PROGRAM_PARAMETERS" value="192.168.1.104 8080 D:\\фильмы\\hd.mkv" />
+      <option name="PROGRAM_PARAMETERS" value="192.168.1.106 8080 src/main/resources/видео.mp4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -67,7 +67,7 @@
     <configuration name="server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ServerLauncher" />
       <module name="lab2" />
-      <option name="PROGRAM_PARAMETERS" value="192.168.1.104 8080" />
+      <option name="PROGRAM_PARAMETERS" value="8080" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695307104806</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="closing socket in catch-block, fixed getting fileName from fullFileName">
+      <created>1695307732197</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695307732197</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,7 +169,8 @@
     <MESSAGE value="without file name length sending, with readUTF and writeUTF" />
     <MESSAGE value="tested with large file and two clients" />
     <MESSAGE value="added opportunity to send file from any directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="added opportunity to send file from any directory" />
+    <MESSAGE value="closing socket in catch-block, fixed getting fileName from fullFileName" />
+    <option name="LAST_COMMIT_MESSAGE" value="closing socket in catch-block, fixed getting fileName from fullFileName" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
