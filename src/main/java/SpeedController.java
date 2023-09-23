@@ -13,15 +13,6 @@ public class SpeedController implements Runnable
 
     public void finish()
     {
-//        if (isRunning)
-//        {
-//            isRunning = false;
-//            synchronized (this)
-//            {
-//                this.notifyAll();
-//            }
-//        }
-
         isRunning = false;
         synchronized (this)
         {
